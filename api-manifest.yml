@@ -1,0 +1,12 @@
+---
+applications:
+  - name: epsrcacycnode-api
+    memory: 256MB
+    instances: 1
+    command: node app.js
+    buildpacks:
+      - dicf_nodejs_buildpack_1717_cflinuxfs3
+    stack: cflinuxfs3
+    env:
+      VARIABLE_1: 'Variable_vaule'
+      VARIABLE_1: 'Variable_vaule'
